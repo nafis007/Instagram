@@ -1,21 +1,22 @@
 //
 //  AppDelegate.swift
-//  Instagram
+//  InstagramClone
 //
-//  Created by Mobile Computing on 26/09/2018.
+//  Created by Mobile Computing on 25/09/2018.
 //  Copyright © 2018 Mobile Computing. All rights reserved.
 //
 
 import UIKit
-
+import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        UITabBar.appearance().tintColor = UIColor.black
+        FirebaseApp.configure()
         return true
     }
 
